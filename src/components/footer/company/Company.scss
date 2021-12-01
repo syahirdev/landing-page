@@ -12,6 +12,7 @@
   width: 100px;
   cursor: pointer;
   transition: all .2s ease;
+  margin-bottom: 15px;
 
   .icon {
 
@@ -21,6 +22,10 @@
     color: $lightDarkColor;
     font-weight: 900;
     font-size: 25px;
+
+    @include mobile {
+      font-size: 15px;
+    }
   }
 }
 

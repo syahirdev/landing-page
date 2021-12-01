@@ -7,16 +7,26 @@
   padding: 100px;
   background-color: $darkColor;
 
+  @include mobile {
+    padding: 50px;
+  }
+
   .companyWrapper {
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
   }
 
   .companyIcon {
     font-size: 60px;
     color: $lightDarkColor;
+
+    @include mobile {
+      font-size: 35px;
+    }
   }
 
   .arrowIcon {

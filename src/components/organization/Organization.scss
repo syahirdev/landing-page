@@ -8,17 +8,29 @@
   padding: 100px;
   background-color: $darkColor;
 
+  @include tablet {
+    padding: 50px;
+  }
+
+  @include mobile {
+    padding: 50px 10px;
+  }
+
   .profileWrapper {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   .button {
-    margin: 30px 0 0;
     text-align: center;
     padding: 15px 150px;
     background-color: $primaryColor;
     color: $lightColor;
+
+    @include tablet {
+      padding: 15px;
+    }
   }
 }

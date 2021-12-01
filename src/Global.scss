@@ -3,7 +3,37 @@ $darkColor: #383838;
 $lightColor: #f1f1f1;
 $lightDarkColor: #7a7a7a;
 $invisibleColor: #dddddd;
+$borderColor: #d9d9d9;
 
 .primaryText {
   color: $primaryColor
+}
+
+$mobileWidth: 500px;
+$semiMobileWidth: 750px;
+$tabletWidth: 1000px;
+$largeTabletWidth: 1200px;
+
+@mixin mobile {
+  @media (max-width: #{$mobileWidth}) {
+    @content
+  }
+}
+
+@mixin semimobile {
+  @media (max-width: #{$semiMobileWidth}) {
+    @content
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tabletWidth}) {
+    @content
+  }
+}
+
+@mixin largetablet {
+  @media (max-width: #{$largeTabletWidth}) {
+    @content
+  }
 }
