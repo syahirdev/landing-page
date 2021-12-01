@@ -1,3 +1,57 @@
+@import "../../Global";
+
 .message {
-  background-color: gray;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .messageTitle {
+    color: $primaryColor;
+    font-style: italic;
+    font-size: 42px;
+    font-weight: 500;
+    align-self: flex-start;
+    margin-bottom: 25px;
+  }
+
+  .formMessage {
+    width: 100%;
+    border: 1px solid $invisibleColor;
+    border-radius: 5px;
+    padding: 30px;
+
+    .formInput {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      input, textarea {
+        flex: 1;
+        padding: 12px;
+        outline: none;
+        border: 1px solid $invisibleColor;
+        margin-bottom: 30px;
+        border-radius: 5px;
+      }
+    }
+
+    .submitButton {
+      border: none;
+      background-color: $primaryColor;
+      border-radius: 3px;
+      color: $lightColor;
+      padding: 10px 50px;
+      transition: all .2s ease;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: .5px;
+    }
+
+    .submitButton:hover {
+      filter: brightness(110%);
+    }
+  }
 }
