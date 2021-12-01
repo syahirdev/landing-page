@@ -2,4 +2,11 @@
 
 .skill {
   background-color: $darkColor;
+  padding: 100px;
+
+  .progressContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -1,0 +1,20 @@
+@import "../../Global";
+
+.progress {
+  margin: 40px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .progressWrapper {
+    height: 120px;
+    width: 120px;
+  }
+
+  .progressText {
+    color: $lightColor;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+}
