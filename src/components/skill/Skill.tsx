@@ -4,7 +4,7 @@ import { Progress } from "../progress/Progress";
 
 export const Skill = () => {
     return (
-        <div className="skill">
+        <div className="skill" id="skill">
             <Title
                 title="OUR POWERFUL"
                 titlePrimary="SKILLS"
@@ -14,12 +14,12 @@ export const Skill = () => {
                 alternate
             />
             <div className="progressContainer">
-                <Progress percentage={75} text='web design'/>
-                <Progress percentage={92} text='web development'/>
-                <Progress percentage={68} text='speed optimization'/>
-                <Progress percentage={100} text='customer support'/>
-                <Progress percentage={83} text='marketing'/>
-                <Progress percentage={50} text='advertisement'/>
+                <Progress percentage={75} text="web design"/>
+                <Progress percentage={92} text="web development"/>
+                <Progress percentage={68} text="speed optimization"/>
+                <Progress percentage={100} text="customer support"/>
+                <Progress percentage={83} text="marketing"/>
+                <Progress percentage={50} text="advertisement"/>
             </div>
         </div>
     );

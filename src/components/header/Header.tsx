@@ -3,7 +3,7 @@ import { KeyboardArrowDown } from "@mui/icons-material";
 
 export const Header = () => {
     return (
-        <div className="header">
+        <div className="header" id="header">
             <div className="wrapper">
                 <div className="smallText">WHAT ARE YOU WAITING FOR?</div>
                 <div className="bigText">LET'S BE CREATIVE !</div>

@@ -3,7 +3,7 @@ import { Profile } from "../profile/Profile";
 
 export const Organization = () => {
     return (
-        <div className="organization">
+        <div className="organization" id="organization">
             <div className="profileWrapper">
                 <Profile
                     name="Mira Filzah"

@@ -2,7 +2,7 @@ import "./Message.scss";
 
 export const Message = () => {
     return (
-        <div className="message">
+        <div className="message" id="contact">
             <div className="messageTitle">Register Your Interest</div>
             <div className="formMessage">
                 <div className="formInput">

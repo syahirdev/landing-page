@@ -4,7 +4,7 @@ import { Title } from "../title/Title";
 
 export const Intro = () => {
     return (
-        <div className="intro">
+        <div className="intro" id="offer">
             <Title
                 title="WHAT WE"
                 titlePrimary="OFFER"

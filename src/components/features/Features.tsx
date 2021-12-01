@@ -8,7 +8,7 @@ export const Features = () => {
         "Praesent arcu turpis";
 
     return (
-        <div className="features">
+        <div className="features" id="features">
             <div className="featureRow">
                 <FeatureDetails
                     title="Responsive & Multipurpose"
