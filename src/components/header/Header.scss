@@ -15,6 +15,38 @@
     justify-content: center;
     align-items: center;
   }
+
+  .icon {
+    color: $primaryColor;
+    border: 2px solid $primaryColor;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .smallText {
+    font-weight: 400;
+  }
+
+  .bigText {
+    font-size: 50px;
+    font-weight: 900;
+  }
+
+  .containerText {
+    color: white;
+    background-color: $darkColor;
+    padding: 7px;
+    border-radius: 3px;
+    align-self: flex-start;
+    width: calc(100% - (7px * 2));
+    font-style: italic;
+  }
+
+  .mottoText {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0;
+  }
 }
 
 .header::after {
@@ -29,42 +61,6 @@
   bottom: 0;
   position: absolute;
   z-index: -1;
-}
-
-.smallText {
-  font-weight: 400;
-}
-
-.bigText {
-  font-size: 50px;
-  font-weight: 900;
-}
-
-.containerText {
-  color: white;
-  background-color: $darkColor;
-  padding: 7px;
-  border-radius: 3px;
-  align-self: flex-start;
-  width: calc(100% - (7px * 2));
-  font-style: italic;
-}
-
-.mottoText {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 30px 0;
-
-  .firstLetter {
-    color: $primaryColor;
-  }
-}
-
-.icon {
-  color: $primaryColor;
-  border: 2px solid $primaryColor;
-  border-radius: 50%;
-  padding: 5px;
 }
 
 

@@ -1,0 +1,36 @@
+@import "../../../Global";
+
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .icon {
+    font-size: 30px;
+    padding: 25px;
+    color: $lightColor;
+    background-color: $darkColor;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s ease;
+    margin: 30px 0;
+  }
+
+  .icon:hover {
+    background-color: $primaryColor;
+  }
+
+  .title {
+    color: $darkColor;
+    font-weight: 900;
+  }
+
+  .subtitle {
+    color: $darkColor;
+    margin: 20px 0;
+    padding: 0 40px;
+    text-align: center;
+    font-weight: 400;
+  }
+}

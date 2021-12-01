@@ -1,3 +1,27 @@
+@import "../../Global";
+
 .intro {
-  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+
+  .introTitle {
+    font-weight: 900;
+    font-size: 30px;
+    color: $darkColor;
+  }
+
+  .introSubtitle {
+    color: $lightDarkColor;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .offerContainer {
+    display: flex;
+    gap: 20px;
+  }
 }

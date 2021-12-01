@@ -9,7 +9,7 @@ export const Header = () => {
                 <div className="bigText">LET'S BE CREATIVE !</div>
                 <div className="containerText">LOREM IPSUM DOLOR SI AMET</div>
                 <div className="mottoText">
-                    <span className="firstLetter">START</span> DOING THAT
+                    <span className="primaryText">START</span> DOING THAT
                 </div>
                 <KeyboardArrowDown className="icon"/>
             </div>
