@@ -1,0 +1,71 @@
+@import "../../Global";
+
+.profile {
+  position: relative;
+
+  .topProfile {
+    width: 250px;
+    height: 250px;
+    background-color: $lightDarkColor;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+
+    .profileImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+  }
+
+  .profileName {
+    background-color: $primaryColor;
+    padding: 10px 17px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    color: $lightColor;
+    top: 230px;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    position: absolute;
+  }
+
+  .bottomProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $lightDarkColor;
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+    padding-top: 35px;
+    padding-bottom: 15px;
+
+    .profileTitle {
+      color: $lightDarkColor;
+      font-weight: 600;
+    }
+
+    hr {
+      border-top: 1px solid $lightDarkColor;
+      width: 100px;
+      margin: 15px 0;
+    }
+
+    .profileContact {
+      color: $lightColor;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 7px;
+
+      .icon {
+        font-size: 20px;
+      }
+    }
+  }
+}
