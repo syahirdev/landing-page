@@ -1,0 +1,12 @@
+.features {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .featureRow {
+    display: flex;
+    margin: 20px;
+  }
+}

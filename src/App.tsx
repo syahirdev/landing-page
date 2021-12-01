@@ -1,7 +1,7 @@
 import { Header } from "./components/header/Header";
 import { Intro } from "./components/intro/Intro";
 import { Skill } from "./components/skill/Skill";
-import { Benefit } from "./components/benefit/Benefit";
+import { Features } from "./components/features/Features";
 import { Organization } from "./components/organization/Organization";
 import { Message } from "./components/message/Message";
 import { Review } from "./components/review/Review";
@@ -15,7 +15,7 @@ const App = () => {
             <Topbar/>
             <Intro/>
             <Skill/>
-            <Benefit/>
+            <Features/>
             <Organization/>
             <Message/>
             <Review/>

@@ -1,0 +1,74 @@
+@import "../../../Global";
+
+.feature {
+  display: flex;
+  gap: 15px;
+
+  .leftFeature {
+    display: flex;
+    flex-direction: column;
+
+    .icon {
+      color: $lightColor;
+      background-color: $darkColor;
+      padding: 10px 10px 0;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .triangleContainer {
+      position: relative;
+      height: 50px
+    }
+
+    .triangle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 15px solid $darkColor;
+    }
+
+    .square {
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -2;
+      height: 20px;
+      position: absolute;
+      background-color: $primaryColor;
+    }
+
+    .double {
+      //height: 10px;
+      position: absolute;
+      z-index: -1;
+      top: 20px;
+      border-top: 15px solid $primaryColor;
+    }
+  }
+
+  .rightFeature {
+    flex: 1;
+    margin-right: 20px;
+
+    .featureTitle {
+      font-size: 18px;
+      font-weight: 900;
+      color: $darkColor;
+      letter-spacing: 1px;
+    }
+
+    .featureSubtitle {
+      color: $lightDarkColor;
+      font-size: 16px;
+      margin: 5px 0 20px;
+    }
+
+    .featureDescription {
+      color: $darkColor;
+      letter-spacing: .5px;
+    }
+  }
+}
