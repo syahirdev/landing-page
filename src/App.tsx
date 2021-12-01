@@ -7,6 +7,7 @@ import { Message } from "./components/message/Message";
 import { Review } from "./components/review/Review";
 import { Footer } from "./components/footer/Footer";
 import { Topbar } from "./components/topbar/Topbar";
+import { Copyright } from "./components/copyright/Copyright";
 
 const App = () => {
     return (
@@ -20,6 +21,7 @@ const App = () => {
             <Message/>
             <Review/>
             <Footer/>
+            <Copyright/>
         </div>
     );
 };

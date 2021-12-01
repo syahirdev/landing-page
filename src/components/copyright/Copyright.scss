@@ -1,0 +1,18 @@
+@import "../../Global";
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: $darkColor;
+  filter: brightness(80%);
+  color: $lightColor;
+  font-size: 14px;
+  font-weight: 300;
+
+  .copyrightIcon {
+    margin: 0 5px;
+    font-size: 18px;
+  }
+}
