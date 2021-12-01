@@ -1,3 +1,70 @@
+@import "../../Global.scss";
+
 .header {
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0;
+  color: $darkColor;
+  position: relative;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
+.header::after {
+  content: "";
+  opacity: 0.8;
+  background: url("../../assets/background.jpg") no-repeat fixed top;
+  background-size: cover;
+  background-blend-mode: darken;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.smallText {
+  font-weight: 400;
+}
+
+.bigText {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.containerText {
+  color: white;
+  background-color: $darkColor;
+  padding: 7px;
+  border-radius: 3px;
+  align-self: flex-start;
+  width: calc(100% - (7px * 2));
+  font-style: italic;
+}
+
+.mottoText {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px 0;
+
+  .firstLetter {
+    color: $primaryColor;
+  }
+}
+
+.icon {
+  color: $primaryColor;
+  border: 2px solid $primaryColor;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+
