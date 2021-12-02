@@ -1,6 +1,6 @@
 import "./Features.scss";
 import { FeatureDetails } from "./featureDetails/FeatureDetails";
-import { Computer } from "@mui/icons-material";
+import { Computer, Extension, Receipt, ShoppingCart, Star, Support } from "@mui/icons-material";
 
 export const Features = () => {
     const lorem = "Proin in magna a ipsum viverra scelerisque eu\n" +
@@ -20,13 +20,13 @@ export const Features = () => {
                     title="Easy Customization"
                     subtitle="One Click Demo Content Installation"
                     description={lorem}
-                    icon={<Computer/>}
+                    icon={<Extension/>}
                 />
                 <FeatureDetails
                     title="Unlimited Features"
                     subtitle="Shortcodes, Typography & Different Layouts"
                     description={lorem}
-                    icon={<Computer/>}
+                    icon={<Star/>}
                 />
             </div>
             <div className="featureRow">
@@ -34,19 +34,19 @@ export const Features = () => {
                     title="Clean & Modular Coding"
                     subtitle="100% Clean, Valid & Well-Commented Coding"
                     description={lorem}
-                    icon={<Computer/>}
+                    icon={<Receipt/>}
                 />
                 <FeatureDetails
                     title="The Best E-Commerce Solution"
                     subtitle="WooCommerce Fully Integration"
                     description={lorem}
-                    icon={<Computer/>}
+                    icon={<ShoppingCart/>}
                 />
                 <FeatureDetails
                     title="Awesome Friendly Support"
                     subtitle="Free Lifetime Support & Updates"
                     description={lorem}
-                    icon={<Computer/>}
+                    icon={<Support/>}
                 />
             </div>
         </div>
