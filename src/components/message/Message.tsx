@@ -2,6 +2,7 @@ import "./Message.scss";
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import * as emailjs from "emailjs-com";
 import { CircularProgress } from "@mui/material";
+emailjs.init(process.env.REACT_APP_EMAILJS_USER_ID || "undefined");
 
 export const Message = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -32,7 +33,7 @@ export const Message = () => {
             process.env.REACT_APP_EMAILJS_SERVICE_ID || "undefined",
             process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "undefined",
             emailForm,
-            process.env.REACT_APP_EMAILJS_USER_ID)
+            process.env.REACT_APP_EMAILJS_USER_ID || "undefined")
             .then((response) => {
                 console.log("SUCCESS!", response.status, response.text);
             }, (error) => {
