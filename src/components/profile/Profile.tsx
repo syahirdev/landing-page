@@ -1,5 +1,5 @@
 import "./Profile.scss";
-import { Email, Phone } from "@mui/icons-material";
+import { Email, Facebook, Google, Instagram, Phone, Reddit, Twitter } from "@mui/icons-material";
 
 interface ProfileProps {
     name: string,
@@ -13,6 +13,13 @@ export const Profile = ({name, title, email, phone, image}: ProfileProps) => {
     return (
         <div className="profile">
             <div className="topProfile">
+                <div className="socialMedia">
+                    <Facebook className="socialMediaIcon firstIcon"/>
+                    <Twitter className="socialMediaIcon"/>
+                    <Google className="socialMediaIcon"/>
+                    <Instagram className="socialMediaIcon"/>
+                    <Reddit className="socialMediaIcon"/>
+                </div>
                 <img src={`./assets/images/${image}`} alt="" className="profileImg"/>
             </div>
             <div className="profileName">

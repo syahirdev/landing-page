@@ -11,12 +11,52 @@
     overflow: hidden;
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
+
+    .socialMedia {
+      position: absolute;
+      z-index: 0;
+      color: $lightColor;
+      transition: all .3s ease;
+      top: 100px;
+      left: 43px;
+
+      .firstIcon {
+        margin-left: 0 !important;
+      }
+
+      .socialMediaIcon {
+        padding: 10px;
+        background-color: $primaryColor;
+        margin-left: -15px;
+        border-radius: 50%;
+        transition: all .2s ease;
+
+        &:hover {
+          font-size: 35px;
+          filter: brightness(130%);
+        }
+      }
+    }
 
     .profileImg {
+      position: relative;
       width: 100%;
       height: 100%;
       object-fit: cover;
       z-index: 1;
+      transition: all .3s ease;
+    }
+
+    &:hover {
+      .socialMedia {
+        z-index: 1;
+      }
+
+      .profileImg {
+        z-index: 0;
+        filter: brightness(30%);
+      }
     }
   }
 
@@ -32,6 +72,13 @@
     right: 20%;
     text-align: center;
     position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    transition: all .2s ease;
+
+    &:hover {
+      filter: brightness(120%);
+    }
   }
 
   .bottomProfile {
