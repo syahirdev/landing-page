@@ -11,7 +11,7 @@ export const Skill = () => {
                 subtitle="We're good and experienced at
                 different things and areas and
                 we promise about quality of our works"
-                alternate
+                alternate="second"
             />
             <div className="progressContainer">
                 <Progress percentage={75} text="web design"/>

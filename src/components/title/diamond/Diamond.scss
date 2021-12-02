@@ -1,0 +1,31 @@
+@import "../../../Global";
+
+.shape-section {
+  padding: 5px;
+  overflow: hidden;
+}
+
+.diamond-shape {
+  background: $primaryColor;
+  text-align: center;
+  transform: rotate(45deg);
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.position-1 {
+  opacity: .35;
+  height: 11px;
+  width: 11px;
+}
+
+.position-2 {
+  opacity: .65;
+  height: 13px;
+  width: 13px;
+}
+
+.position-3 {
+  height: 15px;
+  width: 15px;
+}

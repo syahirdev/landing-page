@@ -29,6 +29,10 @@
     background-color: $primaryColor;
     color: $lightColor;
 
+    &:hover {
+      filter: brightness(115%);
+    }
+
     @include tablet {
       padding: 15px;
     }

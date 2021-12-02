@@ -7,13 +7,39 @@
   align-items: center;
   text-align: center;
 
-  .titleText {
+  .titleHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 900;
     font-size: 30px;
     color: $darkColor;
+
+    .titleText {
+      margin: 0 25px;
+
+      .alternateText1 {
+        color: $darkColor;
+      }
+
+      @include mobile {
+        font-size: 20px;
+        margin: 0 10px;
+      }
+    }
   }
 
-  .alternateTitleText {
+  .diamondWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .alternateText1 {
+    color: $primaryColor;
+  }
+
+  .alternateText2 {
     color: $lightColor;
   }
 

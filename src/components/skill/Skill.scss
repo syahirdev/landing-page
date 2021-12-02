@@ -1,8 +1,20 @@
 @import "../../Global";
 
 .skill {
-  background-color: $darkColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 100px;
+  background-color: $darkColor;
+
+  @include semimobile {
+    padding: 75px;
+  }
+
+  @include mobile {
+    padding: 50px;
+  }
 
   .progressContainer {
     display: flex;
