@@ -17,7 +17,6 @@ export const Button = ({name, link, border}: ButtonProps) => {
                     to={link}
                     spy={true}
                     smooth={true}
-                    offset={-70}
                     duration={500}
                 >
                     <div className={`${border && "border"} button`}>

@@ -15,7 +15,6 @@ export const MenuLink = ({link, name, setMenu}: MenuLinkProps) => {
             to={link}
             spy={true}
             smooth={true}
-            // offset={-70}
             duration={500}
         >
             <li onClick={() => setMenu(false)}>{name}</li>
